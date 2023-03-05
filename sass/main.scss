@@ -2,3 +2,5 @@
 @use "./layout/global-rules";
 // include contact page styles
 @use "./pages/contact";
+
+@use "./variables/variables" as *;
