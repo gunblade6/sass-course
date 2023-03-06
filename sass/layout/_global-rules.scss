@@ -4,18 +4,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+$light_theme: "false";
+
 body {
   background-color: #333;
+  color: whitesmoke;
+  @if $light_theme == "true" {
+    background-color: whitesmoke;
+    color: #222;
+    h1,
+    h2 {
+      color: cadetblue;
+    }
+  }
 }
 
+$position: "right";
+
+%main_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: beige;
+  background-color: #444;
+  #{$position}: 0;
+}
 h1,
 h2 {
   color: $heading_color;
   $heading_color: magenta !global;
 }
 
-p {
-  color: $text_color;
+.box {
+  @extend %main_box;
 }
 
 section {
