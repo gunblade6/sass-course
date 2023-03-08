@@ -10,13 +10,13 @@ body {
 }
 
 .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
   color: beige;
   background-color: #444;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -26,4 +26,54 @@ h2 {
 
 section {
   padding: 100px;
+}
+
+.circle {
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.class-1 {
+  padding: 11px;
+}
+
+.class-2 {
+  padding: 12px;
+}
+
+.class-3 {
+  padding: 13px;
+}
+
+.class-4 {
+  padding: 14px;
+}
+
+.class-5 {
+  padding: 15px;
+}
+
+.class-6 {
+  padding: 16px;
+}
+
+.class-7 {
+  padding: 17px;
+}
+
+.class-8 {
+  padding: 18px;
+}
+
+.class-9 {
+  padding: 19px;
+}
+
+.class-10 {
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,7 @@
 @use "../variables/variables" as *;
+// include mixins
+@use "../helpers/mixins" as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -22,13 +25,11 @@ body {
 $position: "right";
 
 %main_box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
   color: beige;
   background-color: #444;
   #{$position}: 0;
+  @include flex-center;
 }
 h1,
 h2 {
@@ -42,4 +43,16 @@ h2 {
 
 section {
   padding: $section_padding;
+}
+
+.circle {
+  width: 100px;
+  @include circle;
+}
+
+@for $i from 1 to 11 {
+  // or through 10
+  .class-#{$i} {
+    padding: #{10px + $i};
+  }
 }
